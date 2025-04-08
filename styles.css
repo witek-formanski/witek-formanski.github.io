@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+article {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+table thead {
+  background-color: #eeeeee;
+}
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+table caption {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #0057b7;
+}
+
+button {
+  background-color: #008cba;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #006f8a;
+}
+button:active {
+  background-color: rgb(0, 69.9782608696, 87);
+}
+
+article p:hover {
+  color: #0057b7;
+  text-decoration: underline;
+}
+
+article h2:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  header, footer {
+    display: none;
+  }
+  article {
+    display: block;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  article {
+    display: block;
+  }
+  header, footer {
+    display: none;
+  }
+  button {
+    width: 100%;
+  }
+}
+body {
+  background: linear-gradient(to bottom right, #e2e2e2, #ffffff);
+}
+
+header {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
