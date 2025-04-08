@@ -1,3 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// Zmienne
+$background-color: #f0f0f0;
+$text-color: #333;
+$link-color: #0066cc;
+
+// Mixin
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Stosowanie zmiennych i mixinów
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    @include center-flex;
+    background-color: $link-color;
+    color: white;
+    padding: 10px;
+}
+
+article {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+// Flexbox dla tabeli
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    caption {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+}
+
+// Styl dla przycisku
+button {
+    background-color: $link-color;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken($link-color, 10%);
+}
+
+// Ukrywanie elementów w zależności od szerokości okna
+@media screen and (max-width: 800px) {
+    header, footer {
+        display: none;
+    }
+
+    article {
+        display: block;
+    }
+}
